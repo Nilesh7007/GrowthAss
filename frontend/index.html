@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Webpage Scraper</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <h1>Webpage Scraper</h1>
+
+  <div>
+    <label for="urlInput">Enter Website URL:</label>
+    <input type="text" id="urlInput" placeholder="https://example.com">
+    <button id="checkButton">Get Insights</button>
+  </div>
+
+  <h2>Result</h2>
+
+  <table id="table">
+    <thead>
+      <tr>
+        <th>URL</th>
+        <th>Fav</th>
+        <th>Word Count</th>
+        <th>Action</th>
+        <th>Action2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Previous search results will be dynamically added here -->
+    </tbody>
+  </table>
+
+  <button id="pre">Privious Results</button>
+  <div id="parent"></div>
+
+</body>
+</html>
+
+<script src="./index.js"></script>
