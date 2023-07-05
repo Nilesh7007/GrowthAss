@@ -43,7 +43,7 @@ countRouter.post('/api/wordcount', (req, res) => {
 
 
   countRouter.get("/api/previous",async(req,res)=>{
-    // const que = req.query
+    
     try {
         const totalPreS= await CountModel.find()
     
@@ -52,6 +52,5 @@ countRouter.post('/api/wordcount', (req, res) => {
         res.status(400).send({"err":err.message})
     }
     })
-
 
   module.exports = {countRouter}
